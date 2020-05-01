@@ -7,7 +7,9 @@
     "cf-update": "./bin/cf-update.js"
   },
   "scripts": {
-    "test": "jest --ci --coverage --runInBand"
+    "test": "jest --ci --coverage --runInBand",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "keywords": [
     "cloudflare",
@@ -25,7 +27,8 @@
   },
   "homepage": "https://github.com/drazisil/cloudflare-ddns-cli#readme",
   "dependencies": {
-    "cloudflare-ddns-sync": "^2.0.0"
+    "cloudflare-ddns-sync": "^2.0.0",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "jest": "^24.7.1",
@@ -41,5 +44,6 @@
         }
       ]
     ]
-  }
+  },
+  "snyk": true
 }
