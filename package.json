@@ -29,7 +29,7 @@
   },
   "devDependencies": {
     "jest": "26.1.0",
-    "jest-junit": "11.0.1"
+    "jest-junit": "11.1.0"
   },
   "jest": {
     "reporters": [
